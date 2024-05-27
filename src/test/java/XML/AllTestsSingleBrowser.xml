@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="MySuit">
+
+    <test name="myTest1">
+        <parameter name="changeIt" value="Ress_3"></parameter>
+        <parameter name="browserTipi" value="chrome"></parameter>
+
+        <classes>
+            <class name="Runners.Parabank_TestRunner"></class>
+        </classes>
+    </test>
+
+</suite>

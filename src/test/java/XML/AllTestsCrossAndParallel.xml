@@ -1,0 +1,22 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="MySuit" parallel="tests" thread-count="2">
+
+    <test name="myTest1">
+        <parameter name="changeIt" value="Ress_1"></parameter>
+        <parameter name="browserTipi" value="edge"></parameter>
+
+        <classes>
+            <class name="Runners.Parabank_TestRunner_Parallel"></class>
+        </classes>
+    </test>
+
+    <test name="myTest2">
+        <parameter name="changeIt" value="Ress_2"></parameter>
+        <parameter name="browserTipi" value="chrome"></parameter>
+
+        <classes>
+            <class name="Runners.Parabank_TestRunner_Parallel"></class>
+        </classes>
+    </test>
+
+</suite>
